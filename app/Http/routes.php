@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('register', 'AuthController@register');
+Route::post('register', 'AuthController@registerProcess');
+Route::get('activate/{id}/{code}', 'AuthController@activate');
+Route::get('login', 'AuthController@login');
+Route::post('login', 'AuthController@loginProcess');
+Route::get('logout', 'AuthController@logoutuser');
+Route::get('reset', 'AuthController@resetOrder');
+Route::post('reset', 'AuthController@resetOrderProcess');
+Route::get('reset/{id}/{code}', 'AuthController@resetComplete');
+Route::post('reset/{id}/{code}', 'AuthController@resetCompleteProcess');
+Route::get('wait', 'AuthController@wait');

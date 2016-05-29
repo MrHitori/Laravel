@@ -150,7 +150,7 @@ return [
 		
 		Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
 
-		Collective\Html\HtmlServiceProvider::class
+		Collective\Html\HtmlServiceProvider::class,
         /*
          * Application Service Providers...
          */
